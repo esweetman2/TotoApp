@@ -1,0 +1,188 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.todo-app{
+    background-color: #333;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+h1{
+    color: white;
+    font-size: 50px;
+}
+h2{
+    text-transform: uppercase;
+    font-size: 30px;
+    word-spacing: 5px;
+}
+.todos-container{
+    margin:auto;
+    text-align: center;
+    width: 50%;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: rgb(207, 205, 205);
+}
+.enter-container{
+    display: flex;
+    flex-direction: row;
+    margin:10px;
+    justify-content: center;
+
+}
+#enter{
+    display: inline-block;
+    text-align: center;
+    margin-left:50px;
+    border: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    background-color:blue;
+    color: lightgray;
+    padding:5px 20px 5px 20px;
+    border-radius: 7px;
+    cursor: pointer;
+    opacity: 1;
+    outline: none;
+    transition-duration: 0.4s;
+}
+#enter:hover{
+    opacity: 1;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+#enter:active{
+    transform: translateY(4px);
+}
+
+#todoText{
+    padding:3px;
+    border-radius: 3px;
+    outline: none;
+    border:none;
+    border-bottom: 2px solid white;
+    background-color: inherit;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 20px;
+    width: 100%;
+}
+#todo-items{
+    list-style-type: none;
+    margin:auto;
+    padding-left:15px;
+    padding-right: 15px;
+}
+#todo-items li{
+    font-size: 1.5rem;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin:auto;
+    padding:3px;
+   border-radius: 2px;
+   border-bottom: 1px solid black;
+
+}
+#filterTodo{
+    padding:5px;
+    border-radius: 3px;
+    outline: none;
+    border:none;
+    border-bottom: 2px solid white;
+    background-color: inherit;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 20px;
+    width: 75%;
+    margin: 2.5rem;
+}
+.clearBtn{
+    background-color:blue;
+    color: white;
+    border: none;
+    padding: .5rem 2rem .5rem 2rem;
+    outline: none;
+    cursor: pointer;
+    width: 75%;
+    margin: 2rem;
+    font-size: 1rem;
+    border-radius: 25px;
+    transition-duration: 0.4s;
+}
+.clearBtn:active{
+    transform: translateY(4px);
+}
+.clearBtn:hover{
+    opacity: 1;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#del-btn{
+    padding:5px 10px 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: red;
+    cursor:pointer;
+    font-size: 15px;
+    margin: .5rem;
+    outline: none;
+}
+#del-btn:hover{
+    background-color: red;
+    border:none; 
+    border-radius: 5px;
+}
+.fillInWarning{
+    position: fixed;
+    display: none;
+    top: 50%;
+    left: 50%;
+    height: 100%;
+    width: 100%;
+    transform: translate(-50%,-50%)
+}
+.warningOverlay{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100%;
+    width: 100%;
+    transform: translate(-50%,-50%);
+    background: blue;
+    opacity: .9;
+
+}
+.fillInWarning > p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: lightgray;
+    font-size: 1.9rem;
+    text-align: center;
+    
+}
+
+
+@media only screen and (max-width: 700px) {
+    body{
+        margin: 0;
+        padding:0;
+    }
+    .todos-container {
+      width:100%;
+      box-sizing: border-box;
+        border-radius: 0;
+    }
+    .todos-container{
+        align-content: center;
+
+    }
+    .todo-app{
+        margin-bottom: 0;
+    }
+  }

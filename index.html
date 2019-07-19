@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Todo Appplication</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+
+</head>
+<body>
+    <div class="todo-app">
+        <h1>Todo Application</h1>
+    </div>
+
+
+    <div class="fillInWarning">
+        <div class="warningOverlay"></div>
+        <p>Please fill in a vaild Todo,<br><br> thank you!</p>
+    </div>
+
+    <div class="todos-container">
+            <h2>Todo List</h2>
+        <div class="enter-container">
+            <form>
+                <input type="text" placeholder="Enter Todo..." id="todoText">
+            </form>
+            <button id="enter">Enter</button>
+        </div>
+
+        <form>
+            <input type="text" placeholder="filter" id="filterTodo">
+        </form>
+
+        <div>
+            <h2>Todo Items</h2>
+            <ul id="todo-items">         
+            </ul>
+        </div>
+
+        <div class="clearTodos">
+            <button class="clearBtn">Clear List</button>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
